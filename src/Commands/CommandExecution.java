@@ -13,7 +13,7 @@ import java.util.TreeSet;
          * @param file - файл в котором храниться коллекция
          * @param time - текущее время
          */
-        public static void action(TreeSet<Person> collection, String line, String command, String file, LocalDateTime time){
+        public static void action(TreeSet<Person> collection, String line, String command, String file, LocalDateTime time){ // TODO: implement method from comman, why u create new?
             //System.out.println(line);
             if (line.equals("help")){
                 CommandHelp.action();
