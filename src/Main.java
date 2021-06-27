@@ -11,11 +11,11 @@ public class Main {
     public static void main(String[] args) {
         //String temp = System.getenv().get("PersonPATH");
         Manager manager = new Manager();
-        TreeSet<Person> collection = new TreeSet<Person>(new PersonComparator());
+        TreeSet<Person> collection = new TreeSet<Person>(new PersonComparator()); //TODO: dependancy invesion
         LocalDateTime today = LocalDateTime.now();
         String file;
         //file = "/home/s308489/Person.csv";
-        file = "C:\\Users\\Евгений\\IdeaProjects\\lab5.1\\src\\Files\\Person.csv";
+        file = "C:\\Users\\Евгений\\IdeaProjects\\lab5.1\\src\\Files\\Person.csv"; //TODO: compare wiht task
         System.out.println(file);
         manager.fill(file, collection);
         System.out.println("\nhelp : вывести справку по доступным командам\n");
