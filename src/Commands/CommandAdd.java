@@ -19,7 +19,7 @@ public class CommandAdd extends Command {
         Manager manager = new Manager();
         Scanner in = new Scanner(System.in);
         String element = "";
-        String field[] = new String[]{
+        String field[] = new String[]{ //TODO remove rebuilding strings
                 //"Id: ",
                 "Name: ",
                 "X: ",
@@ -33,7 +33,7 @@ public class CommandAdd extends Command {
                 "y: ",
                 "z: "
         } ;
-        for (int i = 0; i<10; i++){
+        for (int i = 0; i<10; i++){ //TODO remove constant
             System.out.print(field[i]);
             element = element + "," + in.nextLine();
         }
